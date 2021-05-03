@@ -1,0 +1,28 @@
+@import './../../styles/variables.scss';
+@import './../../styles/extends.scss';
+
+.loader {
+  @extend %fixed-overlay;
+
+  &.is-visible {
+    @extend %visible-overlay;
+  }
+}
+
+.loader-spinner {
+  width: var(--spiner-size);
+  height: var(--spiner-size);
+  border: 3px solid var(--white-color);
+  border-radius: 50%;
+  border-right-color: var(--spiner-color);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

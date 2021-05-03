@@ -1,0 +1,23 @@
+@mixin hover {
+  @media (hover) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 760px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1900px) {
+    @content;
+  }
+}

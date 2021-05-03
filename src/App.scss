@@ -1,0 +1,12 @@
+.app {
+  min-height: 100vh;
+}
+
+.is-fixed {
+  position: fixed;
+  overflow: hidden;
+
+  * {
+    pointer-events: none;
+  }
+}
